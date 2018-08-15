@@ -1,0 +1,40 @@
+{
+  "name": "wizmo",
+  "version": "1.0.0",
+  "description": "a designer-friendly JavaScript toolkit for modern Web design",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "jshint": "^2.9.6",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-fixture": "^0.2.6",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-json-fixtures-preprocessor": "0.0.6",
+    "karma-json-reporter": "^1.2.1",
+    "karma-log-reporter": "0.0.4",
+    "karma-sauce-launcher": "^1.2.0",
+    "karma-verbose-summary-reporter": "0.0.1",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "scripts": {
+    "test": "npm run test:lint && npm run test:unit",
+    "test:unit": "karma start test/karma.conf.js --browsers=ChromeHeadless",
+    "test:lint": "jshint test/spec/src/wizmo.beta.c.js test/spec/src/wizmo.beta.nc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/restive/wizmo.git"
+  },
+  "author": "Obinwanne Hill <ohill@restive.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/restive/wizmo/issues"
+  },
+  "homepage": "https://github.com/restive/wizmo#readme"
+}

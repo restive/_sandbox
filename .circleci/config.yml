@@ -14,3 +14,12 @@ jobs:
       - run:
           name: 'run-tests'
           command: 'npm test'
+  test:
+    docker:
+          - image: circleci/node:8
+    steps:
+      - checkout
+      - run:
+          name: 'coverage'
+          command: 'bash <(curl -s https://codecov.io/bash)'
+      
